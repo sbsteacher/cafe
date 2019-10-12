@@ -5,8 +5,10 @@ public class Main {
 	public static void main(String[] args) {
 		MenuTable mt = new MenuTable();
 		Customer customer = new Customer();
-		MenuItem mi = customer.order(mt);
+		Barista barista = new Barista();
 		
+		MenuItem mi = customer.order(mt);
+		ICoffee coffee = barista.makeCoffee(mi);
 	}
 
 }

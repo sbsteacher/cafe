@@ -12,4 +12,6 @@ public class Customer {
 		scan.close();
 		return mt.pickMenu(selectedMenuIdx);		
 	}
+	
+	//커피 주소값 받고 "커피명을 마신다" 라고 나오는 메소드를 만든다.
 }

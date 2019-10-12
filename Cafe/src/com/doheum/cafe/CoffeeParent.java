@@ -1,6 +1,6 @@
 package com.doheum.cafe;
 
-public class CoffeeParent implements ICoffee {
+public abstract class CoffeeParent implements ICoffee {
 
 	private MenuItem mi;
 
