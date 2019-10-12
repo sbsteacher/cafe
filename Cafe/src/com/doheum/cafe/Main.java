@@ -6,6 +6,7 @@ public class Main {
 		MenuTable mt = new MenuTable();
 		Customer customer = new Customer();
 		MenuItem mi = customer.order(mt);
+		
 	}
 
 }
