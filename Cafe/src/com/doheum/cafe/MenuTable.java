@@ -29,9 +29,14 @@ public class MenuTable {
 		}		
 	}
 	
-	public ______ pickMenu(            ) {
+	public MenuItem pickMenu(int selectedMenuIdx) {
+		//MenuItem mi = menus.get(selectedMenuIdx - 1);
+		//return mi;
 		
+		return menus.get(selectedMenuIdx - 1);
 	}
+	
+	
 }
 
 
