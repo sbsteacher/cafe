@@ -8,7 +8,9 @@ public class Main {
 		Barista barista = new Barista();
 		
 		MenuItem mi = customer.order(mt);
-		ICoffee coffee = barista.makeCoffee(mi);
+		ICoffee coffee = barista.makeCoffee(mi);	
+		
+		customer.drinkCoffee(coffee);
 	}
 
 }

@@ -14,4 +14,14 @@ public class Customer {
 	}
 	
 	//커피 주소값 받고 "커피명을 마신다" 라고 나오는 메소드를 만든다.
+	public void drinkCoffee(ICoffee coffee) {
+		System.out.printf("%s을(를) 마신다.\n", coffee.getCoffeeName());
+	}
+	
 }
+
+
+
+
+
+
