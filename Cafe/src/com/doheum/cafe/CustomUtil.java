@@ -5,7 +5,7 @@ public class CustomUtil {
 	public static int parseStringToInt(String target, int defaultValue) {
 		int result = 0;
 		
-		try {			
+		try {
 			result = Integer.parseInt(target);			
 		} catch(Exception e) {
 			result = defaultValue;

@@ -28,6 +28,11 @@ public class Customer {
 				break;
 			}
 		}
+		
+		if(mi.getMenuPrice() > this.money) {
+			mi = null;
+		}		
+		
 		return mi;
 	}
 	
