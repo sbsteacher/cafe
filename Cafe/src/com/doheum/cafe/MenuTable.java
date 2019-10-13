@@ -32,11 +32,13 @@ public class MenuTable {
 	public MenuItem pickMenu(int selectedMenuIdx) {
 		//MenuItem mi = menus.get(selectedMenuIdx - 1);
 		//return mi;
-		
-		return menus.get(selectedMenuIdx - 1);
+		int calcIdx = selectedMenuIdx - 1;
+		if(calcIdx >= 0 && calcIdx < menus.size()) {
+			return menus.get(calcIdx);
+		} 
+	
+		return null;
 	}
-	
-	
 }
 
 
