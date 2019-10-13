@@ -6,17 +6,8 @@ public class Main {
 		MenuTable mt = new MenuTable();
 		Customer customer = new Customer();
 		Barista barista = new Barista();
-		MenuItem mi = null;
-		while(true) {
-			mi = customer.order(mt);
-			if(mi == null) {
-				System.out.println("잘못된 선택입니다.");			
-			} else {
-				break;
-			}
-		}
+		MenuItem mi = customer.orderWhile(mt);		
 		customer.closeScanner();
-		
 		ICoffee coffee = barista.makeCoffee(mi);
 		customer.drinkCoffee(coffee);
 		
