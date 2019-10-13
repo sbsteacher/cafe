@@ -3,8 +3,14 @@ package com.doheum.cafe;
 import java.util.Scanner;
 
 public class Customer {
+	private int money;
 	private Scanner scan = new Scanner(System.in);
-	
+		
+	public Customer(int money) {
+		super();
+		this.money = money;
+	}
+
 	public MenuItem order(MenuTable mt) {
 		mt.showMenus();		
 		System.out.print("메뉴를 선택해 주세요: ");
